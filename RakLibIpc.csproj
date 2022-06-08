@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SkyWing.RakLib.Ipc</RootNamespace>
+        <PackageId>SkyWing.RakLibIpc</PackageId>
+        <PackageVersion>0.1.0</PackageVersion>
+        <Title>RakLibIpc</Title>
+        <Authors>Cosmic5173</Authors>
+        <Description>Channel-based inter-thread/inter-process communication protocol library for RakLib.</Description>
+        <Copyright>Copyright 2022 SkyWing</Copyright>
+        <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/sw-mc/RakLibIpc</RepositoryUrl>
+        <RepositoryType>library</RepositoryType>
+        <PackageTags>RakLib, Threading, IPC</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include=".git\config" />
+      <Content Include=".git\description" />
+      <Content Include=".git\HEAD" />
+      <Content Include=".git\hooks\applypatch-msg.sample" />
+      <Content Include=".git\hooks\commit-msg.sample" />
+      <Content Include=".git\hooks\fsmonitor-watchman.sample" />
+      <Content Include=".git\hooks\post-update.sample" />
+      <Content Include=".git\hooks\pre-applypatch.sample" />
+      <Content Include=".git\hooks\pre-commit.sample" />
+      <Content Include=".git\hooks\pre-merge-commit.sample" />
+      <Content Include=".git\hooks\pre-push.sample" />
+      <Content Include=".git\hooks\pre-rebase.sample" />
+      <Content Include=".git\hooks\pre-receive.sample" />
+      <Content Include=".git\hooks\prepare-commit-msg.sample" />
+      <Content Include=".git\hooks\push-to-checkout.sample" />
+      <Content Include=".git\hooks\update.sample" />
+      <Content Include=".git\index" />
+      <Content Include=".git\info\exclude" />
+      <Content Include=".git\logs\HEAD" />
+      <Content Include=".git\logs\refs\heads\stable" />
+      <Content Include=".git\logs\refs\remotes\origin\HEAD" />
+      <Content Include=".git\objects\pack\pack-043e324705b2fe33338a6986b216cca212404f14.idx" />
+      <Content Include=".git\objects\pack\pack-043e324705b2fe33338a6986b216cca212404f14.pack" />
+      <Content Include=".git\packed-refs" />
+      <Content Include=".git\refs\heads\stable" />
+      <Content Include=".git\refs\remotes\origin\HEAD" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include=".git\objects\info" />
+      <Folder Include=".git\refs\tags" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="SkyWing.Binary" Version="1.0.0-dev" />
+        <PackageReference Include="SkyWing.RakLib" Version="1.1.0-dev" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <EditorConfigFiles Include=".editorconfig" />
+    </ItemGroup>
+
+</Project>
